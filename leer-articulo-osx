@@ -1,0 +1,12 @@
+#!/bin/bash
+clear
+echo
+echo "Bienvenid@ al lector de noticias!"
+echo
+echo "Escribe la URL del artículo y pulsa la tecla enter:"
+echo
+read -p ">>> "  url
+cd ~/Desktop/elpais-leer-articulo
+curl $url > articulo.html
+open articulo.html
+exit

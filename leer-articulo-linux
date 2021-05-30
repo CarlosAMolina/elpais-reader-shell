@@ -1,0 +1,11 @@
+#!/bin/bash
+clear
+echo
+echo "Bienvenid@ al lector de noticias!"
+echo
+echo "Escribe la URL del artículo y pulsa la tecla enter:"
+echo
+read -p ">>> "  url
+echo "Welcome $url"
+wget $url -O articulo.html
+firefox articulo.html
